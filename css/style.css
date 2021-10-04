@@ -1,0 +1,16 @@
+.body {
+  height: 100vh;
+  display: flex;
+  border: 5px solid goldenrod;
+  justify-content: center;
+  align-items: center;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+}
+
+.head-image {
+    flex: stretch;
+}
