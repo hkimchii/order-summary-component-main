@@ -29,10 +29,6 @@ p {
   color: hsl(224, 23%, 55%);
 }
 
-a {
-  text-decoration: none;
-}
-
 .order {
   width: 325px;
   min-width: 325px;
@@ -96,6 +92,21 @@ a {
   justify-content: center;
 }
 
+.price {
+  font-weight: 500;
+}
+
+.change {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+}
+
+.change:hover {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+}
+
 .btn {
   -webkit-border-radius: 10;
   -moz-border-radius: 10;
@@ -109,6 +120,7 @@ a {
   border: solid #3829e0 0px;
   text-decoration: none;
   margin-top: 30px;
+  box-shadow: 0px 10px 28px -13px #6f67e0;
 }
 
 .btn:hover {
@@ -117,8 +129,15 @@ a {
 }
 
 .cancel-btn {
-  margin: 30px 0;
+  margin: 25px 0 30px;
   font-size: 15px;
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  font-weight: 900;
+}
+
+.cancel-btn:hover {
+  color: hsl(223, 47%, 23%);
 }
 
 .attribution {
