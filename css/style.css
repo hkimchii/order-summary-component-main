@@ -1,4 +1,5 @@
 body {
+  font-family: "Red Hat Display", sans-serif;
   width: auto;
   height: 100vh;
   margin: 0;
@@ -9,17 +10,38 @@ body {
   background-color: hsl(225, 100%, 94%);
 }
 
+h1 {
+  font-size: 22px;
+  color: hsl(223, 47%, 23%);
+}
+
+h3 {
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 4px;
+  letter-spacing: 0.01em;
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  color: hsl(224, 23%, 55%);
+}
+
+a {
+  text-decoration: none;
+}
+
 .order {
   width: 325px;
   min-width: 325px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px;
 }
 
 .head-image {
-  min-width: 325px;
   width: 325px;
   margin: 0;
 }
@@ -29,38 +51,88 @@ body {
   min-width: 325px;
   width: 325px;
   height: 100%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 
 .container {
   width: 100%;
   min-width: 325px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.container-header {
+  margin: 35px 0 0 0;
+}
+
+.container-p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 20px 30px 0 30px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.order-plan {
   background-color: hsl(225, 100%, 98%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 85%;
+  padding: 15px 7px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.order-detail {
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+  background: #3829e0;
+  padding: 15px 60px 15px 60px;
+  border: solid #3829e0 0px;
+  text-decoration: none;
+  margin-top: 30px;
+}
+
+.btn:hover {
+  background: #6f67e0;
+  text-decoration: none;
+}
+
+.cancel-btn {
+  margin: 30px 0;
+  font-size: 15px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 5px;
 }
 
 @media (min-width: 460px) {
-  body {
-    width: auto;
-    height: 100vh;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: hsl(225, 100%, 94%);
-  }
-
   .order {
     width: 450px;
-    min-width: 325px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 25px;
   }
 
   .head-image {
-    min-width: 325px;
-    width: auto;
+    width: 100%;
     margin: 0;
   }
 
@@ -71,8 +143,11 @@ body {
     height: 100%;
   }
 
-  .container {
-    width: 100%;
-    background-color: hsl(225, 100%, 98%);
+  .order-plan {
+    width: 400px;
+  }
+
+  .order-detail {
+    width: 200px;
   }
 }
